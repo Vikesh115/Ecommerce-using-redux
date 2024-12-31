@@ -5,7 +5,7 @@ import Cart from './pages/Cart/Cart'
 import Navbar from './components/Navbar/Navbar'
 import Wishlist from './pages/Wishlist/Wishlist'
 import ProductDetails from './pages/ViewProductDetails/ProductDetails'
-const Dashboard = lazy(() => import('./pages/Products/Dashboard') );
+const Dashboard = lazy(() => import('./pages/Products/Dashboard'));
 // import Dashboard from './pages/Products/Dashboard'
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
@@ -24,10 +24,9 @@ function App() {
         (<>
           <Navbar handleLogout={handleLogout} />
           <Routes>
-          <Route path='/' element={<Suspense
-                fallback={<div className='flex justify-center item-center text-2xl text-cyan-900 font-bold'>DASHBOARD are loading please wait...</div>}
-            >
-                <Dashboard />
+            <Route path='/' element={<Suspense
+              fallback={<div className='flex justify-center item-center md:mt-0 mt-32 md:text-2xl text-xl md:text-cyan-900 text-cyan-600 font-bold'>DASHBOARD are loading please wait...</div>}>
+              <Dashboard />
             </Suspense>} />
             {/* <Route path='/' element={<Dashboard />} /> */}
             <Route path="/viewproduct/:id" element={<ProductDetails />} />
@@ -38,7 +37,7 @@ function App() {
         (<>
           <Routes>
             <Route path="/" element={<Navigate to="/login" />} />
-            <Route path="/signup" element={<Signup  />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="*" element={<Navigate to="/login" />} />
           </Routes>
