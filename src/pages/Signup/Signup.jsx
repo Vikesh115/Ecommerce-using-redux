@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-function Signup({ setIsLoggedIn }) {
+function Signup() {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -20,7 +20,7 @@ function Signup({ setIsLoggedIn }) {
     const token = `${formData.username}-token`; // Simulated token
     localStorage.setItem('user', JSON.stringify(formData));
     localStorage.setItem('token', token);
-    setIsLoggedIn(true);
+    // setIsLoggedIn(true);
     navigate('/login');
   };
 

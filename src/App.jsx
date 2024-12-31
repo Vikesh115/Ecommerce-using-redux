@@ -32,7 +32,7 @@ function App() {
         (<>
           <Routes>
             <Route path="/" element={<Navigate to="/login" />} />
-            <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/signup" element={<Signup  />} />
             <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="*" element={<Navigate to="/login" />} />
           </Routes>
