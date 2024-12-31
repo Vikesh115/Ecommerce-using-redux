@@ -28,10 +28,15 @@ Includes multiple routes for seamless navigation using React Router.
 ### Technology used
 
 Frontend Framework: React.js
+
 Styling: Tailwind CSS
+
 API: Fake Store API (https://fakestoreapi.com/products)
+
 State Management: Redux Toolkit
+
 Routing: React Router
+
 Icons: React Icons
 
 ### Dependencies
