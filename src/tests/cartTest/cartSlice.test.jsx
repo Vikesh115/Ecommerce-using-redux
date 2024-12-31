@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import cartReducer, { addToCart, removeFromCart } from '../cartSlice';
+import cartReducer, { addToCart, removeFromCart } from '../../slice/cartSlice';
 
 describe('Cart Slice', () => {
   beforeEach(() => {
