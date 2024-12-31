@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Login({ setIsLoggedIn }) {
   const [credentials, setCredentials] = useState({
@@ -73,6 +73,7 @@ function Login({ setIsLoggedIn }) {
         >
           Log In
         </button>
+        <Link to={'/signup'}>Not registered? Signup</Link>
       </form>
     </div>
   );

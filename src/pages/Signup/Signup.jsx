@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Signup({ setIsLoggedIn }) {
   const [formData, setFormData] = useState({
@@ -78,6 +79,7 @@ function Signup({ setIsLoggedIn }) {
         >
           Sign Up
         </button>
+        <Link to={'/login'}>Already registered? Login</Link>
       </form>
     </div>
   );
