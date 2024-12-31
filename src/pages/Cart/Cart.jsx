@@ -43,7 +43,7 @@ function Cart() {
                 <div className='flex'>Shop</div>
             </div>
             <div className='flex md:flex-row w-[100%] flex-wrap md:flex-nowrap'>
-                <div className='flex flex-col md:w-[60%]'>
+                <div className='flex flex-col md:w-[50%] '>
                     {cart.map((item) => {
                         return (
                             <>
@@ -84,7 +84,7 @@ function Cart() {
                         )
                     })}
                 </div>
-                <div className='flex w-[100%] md:w-[40%] border-2 m-4 mb-36 md:mb-0 p-4 rounded md:h-[400px] md:mt-4 md:mr-4'>
+                <div className='flex md:fixed md:right-0 md:top-64 w-[100%] md:w-[40%] border-2 m-4 mb-36 md:mb-0 p-4 rounded md:h-[400px] md:mt-4 md:mr-4'>
                     <div className="flex mb-24 md:m-2 flex-col w-[100%]">
                         <p className='flex text-xl '>Cart total</p>
                         <p className='flex w-[100%] h-[1px] bg-black my-4'></p>

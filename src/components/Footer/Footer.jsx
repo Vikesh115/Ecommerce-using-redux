@@ -3,7 +3,7 @@ import { FaShoppingBag } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="flex md:flex-row flex-col bg-purple-900 text-white w-[100%] justify-evenly md:p-6 mb-16 -my-20 md:my-0 p-2">
+    <div className="flex md:flex-row flex-wrap bg-purple-900 text-white w-[100%] justify-evenly md:p-6 mb-16 -my-20 md:my-0 p-2">
       <div className='flex md:w-[20%] flex-col'>
         <div className='flex justify-center text-2xl'>
           Shop <FaShoppingBag className="ml-2" />
