@@ -47,7 +47,7 @@ Icons: React Icons
 Git commands: 
 git clone  https://github.com/Vikesh115/Ecommerce-using-redux.git
 
-npm istall
+npm install
 
 npm run dev
 
