@@ -59,12 +59,6 @@ function Navbar({ isLoggedIn, handleLogout }) {
                 <p className="flex font-extrabold">{cartCount}</p>
                 <BsCart4 size={40} />
               </button>
-              <NavLink to="/login" className="flex p-2 bg-blue-600 text-white rounded-lg">
-                Login
-              </NavLink>
-              <NavLink to="/signup" className="flex p-2 bg-teal-600 text-white rounded-lg">
-                Signup
-              </NavLink>
             </>
           )}
         </div>
@@ -96,12 +90,6 @@ function Navbar({ isLoggedIn, handleLogout }) {
                   <p className="flex font-extrabold text-white">{wishlistCount}</p>
                   <FaRegHeart size={40} />
                 </button>
-                <NavLink to="/login" className="flex p-2 bg-blue-600 text-white rounded-lg">
-                  Login
-                </NavLink>
-                <NavLink to="/signup" className="flex p-2 bg-yellow-600 text-white rounded-lg">
-                  Signup
-                </NavLink>
               </>
             )}
           </div>
