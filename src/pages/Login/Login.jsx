@@ -31,9 +31,10 @@ function Login({ setIsLoggedIn }) {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className='md:flex w-[100%] gap-3 justify-center items-center'>
+    <div className="flex justify-center md:pt-5 mt-24 md:mt-0 md:w-[40%] w-[100%]">
       <form
-        className="bg-white p-8 rounded-lg shadow-md w-96"
+        className="bg-white p-8 rounded-lg shadow-2xl w-96"
         onSubmit={handleLogin}
       >
         <h2 className="text-2xl font-bold mb-4 text-gray-700 text-center">Log In</h2>
@@ -73,8 +74,12 @@ function Login({ setIsLoggedIn }) {
         >
           Log In
         </button>
-        <Link to={'/signup'}>Not registered? Signup</Link>
+        <Link to={'/signup'} className='flex gap-1'>Not registered? <p className='flex text-blue-900 font-bold'>Signup</p></Link>
       </form>
+    </div>
+    <div className='md:flex hidden md:w-[40%] w-[100%] md:pt-5 justify-center'>
+        <img src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7873.jpg?t=st=1736513360~exp=1736516960~hmac=1d7f00d8794225b09fc38a00e1aa55764f4a0c4317e510c933c33b55196b0e14&w=740" alt="" />
+      </div>
     </div>
   );
 }
