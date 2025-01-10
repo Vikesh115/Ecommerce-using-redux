@@ -34,7 +34,7 @@ function ProductDetails() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center w-[100%] mt-24 md:mt-0">
+        <div className="flex flex-col items-center justify-center w-[100%] my-16 md:my-0 md:mt-0 h-screen md:h-full">
             <div className="flex md:w-[60%] flex-row flex-wrap items-center justify-center ">
                 <div className='flex flex-col items-center justify-center bg-white md:p-4 w-[40%] md:w-[40%] '>
                     <img src={product.image} alt={product.title} className='flex w-[100%] ' />
